@@ -3,9 +3,20 @@
   "description": "A default theme for @react-above/modal",
   "version": "0.0.0-set-by-ci",
   "main": "./dist/index.js",
-  "exports": "./dist/index.mjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "default": "./dist/index.mjs"
+    },
+    "./dist/styles.css": {
+      "require": "./dist/styles.css",
+      "import": "./dist/styles.css",
+      "default": "./dist/styles.css"
+    }    
+  },
   "files": [
     "dist"
   ],
