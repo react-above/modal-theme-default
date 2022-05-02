@@ -1,26 +1,22 @@
-# @react-above/modal-plugin-default
+# @react-above/modal-theme-default
 
 ## Installation
 
 ```sh
-$ yarn add @react-above/modal-plugin-default
+$ yarn add @react-above/modal-theme-default
 ```
 
 ## Usage
 
-### 1. Set up
+### 1. Create Modal component
 
 ```tsx
-/*
- * index.tsx / App.tsx
- */
+/* Somewhere in your UI layer.. */
 
-import { configure } from '@react-above/modal'
+import { createModal } from '@react-above/modal'
 import { ThemeDefault } from '@react-above/modal-theme-default'
-import '@react-above/modal-theme-default/dist/styles.css'
 
-configure({
-  // ...
+export const Modal = createModal({
   theme: ThemeDefault(),
   // ...
 })
@@ -29,7 +25,7 @@ configure({
 ### 2. Use anywhere
 
 ```tsx
-import { Modal } from '@react-above/modal'
+import { Modal } from '@app/ui'
 
 <Modal isOpen={isOpen} close={close}>
   <Modal.Surface>
