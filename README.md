@@ -17,6 +17,7 @@ $ yarn add @react-above/modal-plugin-default
 
 import { configure } from '@react-above/modal'
 import { ThemeDefault } from '@react-above/modal-theme-default'
+import '@react-above/modal-theme-default/dist/styles.css'
 
 configure({
   // ...
