@@ -6,6 +6,7 @@ import { Header } from './header'
 import { HeaderBox } from './header-box'
 import { Surface } from './surface'
 import { Title } from './title'
+import './extend.d'
 
 export const ThemeDefault = createTheme({
   build: () => ({
