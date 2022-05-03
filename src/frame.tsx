@@ -16,23 +16,14 @@ export const Overlay = forwardRef<HTMLDivElement, DivProps>((props, ref) => (
 ))
 
 export const Container = forwardRef<HTMLDivElement, DivProps>((props, ref) => (
-  <div
-    {...props}
-    ref={ref}
-    className={clsx('above-container', props.className)}
-  >
+  <div {...props} ref={ref} className={clsx('above-modal', props.className)}>
     {props.children}
   </div>
 ))
 
-export const Frame: FrameFC = ({
-  screenRef,
-  overlayRef,
-  containerRef,
-  children,
-}) => (
-  <Screen ref={screenRef}>
-    <Overlay ref={overlayRef} />
-    <Container ref={containerRef}>{children}</Container>
+export const Frame: FrameFC = ({ refs, children }) => (
+  <Screen ref={refs.screen}>
+    <Overlay ref={refs.overlay} />
+    <Container ref={refs.modal}>{children}</Container>
   </Screen>
 )
