@@ -649,10 +649,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@react-above/modal@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@react-above/modal/-/modal-0.2.3.tgz#8a4c34a8baf028570f8f54be88181e3bdacca9d9"
-  integrity sha512-ExAIc9dfj2gh6ccsjFpbN69j7OC/Ow+kRml/UknfqhTHeY3npm3+Ys82P7wzhYeVqLKcK+p5JUoyWtQ3jREXMw==
+"@react-above/modal@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@react-above/modal/-/modal-0.2.4.tgz#c6a401fc61e6b7c0968863a0296abb570a5dadb5"
+  integrity sha512-9AzhFIVaGIm/OR8/jqXMPDmA1cjJ1cV2S6kpYR9IDtXu7mB4dr/6GVN9G51T3TmK3Zn3IPsntXb4a2NH3uS2VQ==
   dependencies:
     "@types/body-scroll-lock" "^3.1.0"
     body-scroll-lock "^4.0.0-beta.0"
