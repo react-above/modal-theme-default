@@ -21,8 +21,8 @@ export const Container = forwardRef<HTMLDivElement, DivProps>((props, ref) => (
   </div>
 ))
 
-export const Frame: FrameFC = ({ refs, children }) => (
-  <Screen ref={refs.screen}>
+export const Frame: FrameFC = ({ refs, a11yAttibutes, children }) => (
+  <Screen ref={refs.screen} {...a11yAttibutes}>
     <Overlay ref={refs.overlay} />
     <Container ref={refs.modal}>{children}</Container>
   </Screen>
