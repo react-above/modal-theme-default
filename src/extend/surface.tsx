@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 import React, { forwardRef } from 'react'
-import { DivProps } from './types'
+import { DivProps } from '../types'
 
 type Props = {
   fullscreen?: boolean | 'strict'

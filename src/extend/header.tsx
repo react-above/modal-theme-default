@@ -1,8 +1,8 @@
 import React, { forwardRef } from 'react'
+import { DivProps } from '../types'
 import { Close } from './close'
 import { HeaderBox } from './header-box'
 import { Title } from './title'
-import { DivProps } from './types'
 
 type Props = {
   title?: string

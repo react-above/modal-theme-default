@@ -1,11 +1,11 @@
 import { createTheme, ModalFC } from '@react-above/modal'
 import { Frame } from './frame'
-import { Body } from './body'
-import { Close } from './close'
-import { Header } from './header'
-import { HeaderBox } from './header-box'
-import { Surface } from './surface'
-import { Title } from './title'
+import { Body } from './extend/body'
+import { Close } from './extend/close'
+import { Header } from './extend/header'
+import { HeaderBox } from './extend/header-box'
+import { Surface } from './extend/surface'
+import { Title } from './extend/title'
 
 export type DefaultModal = ModalFC & {
   Surface: typeof Surface
@@ -18,15 +18,18 @@ export type DefaultModal = ModalFC & {
 
 export const ThemeDefault = createTheme({
   build: () => ({
+    name: 'default',
     frame: Frame,
     extend: (modal) => {
-      const compound = modal as DefaultModal
-      compound.Surface = Surface
-      compound.Header = Header
-      compound.HeaderBox = HeaderBox
-      compound.Title = Title
-      compound.Close = Close
-      compound.Body = Body
+      const compound: DefaultModal = Object.assign(modal, {
+        Surface,
+        Header,
+        HeaderBox,
+        Title,
+        Close,
+        Body,
+      })
+
       return compound
     },
   }),
