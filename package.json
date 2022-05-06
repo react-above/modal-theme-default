@@ -2,19 +2,19 @@
   "name": "@react-above/modal-theme-default",
   "description": "A default theme for @react-above/modal",
   "version": "0.0.0-set-by-ci",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/lib/index.js",
+  "module": "./dist/lib/index.js",
+  "types": "./dist/lib/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "default": "./dist/index.mjs"
+      "require": "./dist/lib/index.js",
+      "import": "./dist/lib/index.mjs",
+      "default": "./dist/lib/index.mjs"
     },
-    "./dist/styles.css": {
-      "require": "./dist/styles.css",
-      "import": "./dist/styles.css",
-      "default": "./dist/styles.css"
+    "./dist/lib/styles.css": {
+      "require": "./dist/lib/styles.css",
+      "import": "./dist/lib/styles.css",
+      "default": "./dist/lib/styles.css"
     }    
   },
   "files": [
@@ -29,7 +29,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && rollup -c",
+    "build:demo": "vite build",
+    "build": "rollup -c",
     "test": "jest",
     "lint": "eslint --ext .ts,.tsx src"
   },
@@ -39,7 +40,6 @@
     "@eslint-kit/eslint-config-patch": "^1.0.0",
     "@eslint-kit/eslint-config-prettier": "^3.0.0",
     "@eslint-kit/eslint-config-typescript": "^5.2.0",
-    "@react-above/modal": "^0.3.3",
     "@testing-library/react-hooks": "^7.0.2",
     "@types/jest": "^26.0.14",
     "@types/react": "^16.9.23",
@@ -71,6 +71,7 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
+    "@react-above/modal": "^0.3.5",
     "clsx": "^1.1.1"
   }
 }

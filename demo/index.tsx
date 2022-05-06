@@ -5,8 +5,8 @@ import {
   ScrollLockPlugin,
   FocusLockPlugin,
 } from '@react-above/modal'
-import { ThemeDefault } from '@react-above/modal-theme-default'
-import '@react-above/modal-theme-default/styles.scss'
+import { ThemeDefault } from '../src'
+import '../src/styles.scss'
 
 const Modal = createModal({
   theme: ThemeDefault(),
