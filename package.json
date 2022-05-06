@@ -29,8 +29,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build:demo": "vite build",
     "build": "rollup -c",
+    "build:demo": "vite build",
     "test": "jest",
     "lint": "eslint --ext .ts,.tsx src"
   },
