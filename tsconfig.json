@@ -24,11 +24,7 @@
     "outDir": "./dist",
     "typeRoots": [
       "./node_modules/@types"
-    ],
-    "paths": {
-      "@react-above/modal-theme-default": ["src/"],
-      "@react-above/modal-theme-default/*": ["src/*"],
-    },
+    ]
   },
   "exclude": [
     "./node_modules",
@@ -36,6 +32,6 @@
   ],
   "include": [
     "src",
-    "app"
+    "demo"
   ]
 }
